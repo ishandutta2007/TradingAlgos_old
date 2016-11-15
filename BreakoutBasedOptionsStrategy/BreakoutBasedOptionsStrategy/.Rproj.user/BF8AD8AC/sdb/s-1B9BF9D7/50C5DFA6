@@ -1,0 +1,25 @@
+{
+    "contents" : "",
+    "created" : 1471977232395.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "50C5DFA6",
+    "lastKnownWriteTime" : 8752009341188207974,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "d2lv03eydv",
+        "caption" : "gg.company.wise",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=gg.company.wise&cache_key=d2lv03eydv",
+        "displayedObservations" : 130,
+        "environment" : "",
+        "object" : "gg.company.wise",
+        "totalObservations" : 130,
+        "variables" : 2
+    },
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "type" : "r_dataframe"
+}

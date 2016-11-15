@@ -12,7 +12,7 @@ library(curl)
 #"28-07-2016"
 #"25-08-2016"
 exp.dates<-c("28-01-2016","25-02-2016","31-03-2016","28-04-2016","26-05-2016", "30-06-2016","28-07-2016","25-08-2016")
-expiryDate <- exp.dates[6]
+expiryDate <- exp.dates[5]
 base <- "/Users/dutishan/Desktop/NSECEPE/"
 
 prepare.table <- function(optionType,symbol,strikePrice,expiryDate) {
@@ -81,7 +81,7 @@ get.symbols<-function() {
 
 symbols <- get.symbols()
 
-for (i in 21:184) {
+for (i in 88:95) {
   tryCatch({
     print(paste0(i,".",symbols[i]))
     pv <- get.proximity.value(symbols[i])
@@ -89,9 +89,9 @@ for (i in 21:184) {
     started = F
     exited = 0
     if (pv < 800)  {
-      strikePrice <- 10 * round(pv / 20)
+      strikePrice <- 5 * round(pv / 10)
       maxstrikePrice <- 10 * round(pv / 2)
-      steps = 10;
+      steps = 5;
     } else if (800 <= pv && pv < 8000) {
       strikePrice <- 50 * round(pv / 100)
       maxstrikePrice <- 50 * round(pv / 12)
